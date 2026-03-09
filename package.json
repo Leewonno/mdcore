@@ -7,10 +7,13 @@
   },
   "keywords": [
     "markdown",
-    "editor"
+    "editor",
     "mdcore"
   ],
   "author": "",
   "license": "MIT",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
 }
