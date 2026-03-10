@@ -1,16 +1,19 @@
 // ─── 블록 파싱 정규식 ──────────────────────────────────────────────────────────
 
+import { parseInlineTokens } from "./inline.js";
 import type {
 	BlockContent,
 	BlockPluginResult,
 	Blockquote,
 	Code,
 	Heading,
+	Html,
 	List,
 	ListItem,
 	Paragraph,
 	ParserPlugin,
 	Table,
+	TableRow,
 	ThematicBreak,
 } from "./types.js";
 import { getLine, indentLevel, parseAlignRow, parseTableRow } from "./utils.js";

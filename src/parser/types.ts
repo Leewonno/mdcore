@@ -20,14 +20,14 @@ export interface Emphasis {
 
 export interface InlineCode {
 	type: "inlineCode";
-	children: string;
+	value: string;
 }
 
 export interface Link {
 	type: "link";
 	url: string;
 	title: string | null;
-	children: PhrasingContent;
+	children: PhrasingContent[];
 }
 
 export interface Image {

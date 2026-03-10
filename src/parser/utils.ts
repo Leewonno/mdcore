@@ -1,3 +1,4 @@
+import { parseInlineTokens } from "./inline.js";
 import type { TableCell } from "./types.js";
 import type { TableRow } from "./types.js";
 import type { ParserPlugin } from "./types.js";
