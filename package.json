@@ -1,21 +1,54 @@
 {
-  "name": "mdcore",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "markdown",
-    "editor",
-    "mdcore"
-  ],
-  "author": "",
-  "license": "MIT",
-  "description": "",
-  "devDependencies": {
-    "@biomejs/biome": "^2.4.6",
-    "typescript": "^5.9.3"
-  },
-  "type": "module"
+	"name": "@dldnjssh123/mdcore",
+	"version": "1.0.0",
+	"main": "./dist/index.js",
+	"files": [
+		"dist"
+	],
+	"exports": {
+		".": "./dist/index.js",
+		"./react": "./dist/react.js",
+		"./style": "./dist/style.css"
+	},
+	"peerDependencies": {
+		"react": ">=18.0.0",
+		"react-dom": ">=18.0.0"
+	},
+	"peerDependenciesMeta": {
+		"react": {
+			"optional": true
+		},
+		"react-dom": {
+			"optional": true
+		}
+	},
+	"scripts": {
+		"build": "vite build",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"markdown",
+		"editor",
+		"mdcore"
+	],
+	"author": "",
+	"license": "MIT",
+	"description": "",
+	"devDependencies": {
+		"@biomejs/biome": "^2.4.6",
+		"@tailwindcss/typography": "^0.5.19",
+		"@tailwindcss/vite": "^4.2.1",
+		"@types/react": "^19.2.14",
+		"@types/react-dom": "^19.2.3",
+		"@vitejs/plugin-react": "^5.1.4",
+		"react": "^19.2.4",
+		"react-dom": "^19.2.4",
+		"typescript": "^5.9.3",
+		"vite": "^7.3.1"
+	},
+	"type": "module",
+	"dependencies": {
+		"dompurify": "^3.3.2",
+		"highlight.js": "^11.11.1"
+	}
 }

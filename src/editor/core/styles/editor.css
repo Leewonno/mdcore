@@ -1,0 +1,112 @@
+@reference "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+.mdcore-hidden {
+  display: none !important;
+}
+
+@layer components {
+  .mdcore-editor {
+    @apply flex flex-col border border-gray-200 rounded-lg overflow-hidden bg-white;
+  }
+
+  .mdcore-editor-area {
+    @apply flex overflow-hidden;
+  }
+
+  .mdcore-textarea {
+    @apply w-1/2 h-full resize-none border-r border-gray-200 p-3 font-mono text-sm leading-relaxed focus:outline-none bg-gray-50;
+    tab-size: 2;
+    font-variant-ligatures: none;
+  }
+
+  .mdcore-preview {
+    @apply w-1/2 h-full overflow-y-auto p-4;
+  }
+
+  .mdcore-viewer {
+    @apply prose prose-neutral max-w-none;
+  }
+
+  .mdcore-toolbar {
+    @apply flex items-center gap-1 px-2 py-1 border-b border-gray-200 bg-gray-50 flex-wrap;
+  }
+
+  .mdcore-toolbar-sep {
+    @apply w-px h-5 bg-gray-300 mx-1;
+  }
+
+  .mdcore-toolbar-btn {
+    @apply w-7 h-7 flex items-center justify-center rounded text-gray-600 hover:bg-gray-200 hover:text-gray-900 cursor-pointer transition-colors;
+
+    svg {
+      @apply w-4 h-4;
+    }
+  }
+
+  /* 이미지 모달 */
+  .mdcore-modal-overlay {
+    @apply fixed inset-0 z-50 flex items-center justify-center bg-black/50;
+  }
+
+  .mdcore-modal {
+    @apply bg-white rounded-lg shadow-xl w-full max-w-md p-6 flex flex-col gap-4;
+  }
+
+  .mdcore-modal-tab-bar {
+    @apply flex border-b;
+  }
+
+  .mdcore-modal-tab {
+    @apply px-4 py-2 text-sm font-medium -mb-px cursor-pointer text-gray-500;
+  }
+
+  .mdcore-modal-tab--active {
+    @apply border-b-2 border-blue-500 text-blue-600;
+  }
+
+  .mdcore-modal-tab--disabled {
+    @apply opacity-40 cursor-not-allowed;
+  }
+
+  .mdcore-modal-panel {
+    @apply flex flex-col gap-3;
+  }
+
+  .mdcore-modal-input {
+    @apply border rounded px-3 py-2 text-sm w-full focus:outline-none focus:ring-2 focus:ring-blue-500;
+  }
+
+  .mdcore-modal-file-input {
+    @apply text-sm;
+  }
+
+  .mdcore-modal-actions {
+    @apply flex justify-end gap-2 mt-2;
+  }
+
+  .mdcore-modal-btn-cancel {
+    @apply px-4 py-2 text-sm rounded border hover:bg-gray-50 cursor-pointer;
+  }
+
+  .mdcore-modal-btn-insert {
+    @apply px-4 py-2 text-sm rounded bg-blue-600 text-white hover:bg-blue-700 cursor-pointer;
+  }
+
+  .mdcore-modal-upload-status {
+    @apply text-sm text-gray-500;
+  }
+
+  .mdcore-modal-label {
+    @apply flex flex-col gap-1;
+  }
+
+  .mdcore-modal-label-text {
+    @apply text-sm font-medium text-gray-700;
+  }
+
+  .markdown-body ul,
+  .markdown-body ol {
+    list-style: revert;
+  }
+}
