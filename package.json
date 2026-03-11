@@ -8,11 +8,11 @@
 	],
 	"exports": {
 		".": {
-			"types": "./dist/index.d.ts",
+			"types": "./dist/editor/core/index.d.ts",
 			"default": "./dist/index.js"
 		},
 		"./react": {
-			"types": "./dist/react.d.ts",
+			"types": "./dist/editor/react/index.d.ts",
 			"default": "./dist/react.js"
 		},
 		"./style": {
