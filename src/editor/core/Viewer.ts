@@ -1,6 +1,7 @@
 import DOMPurify from "dompurify";
 import hljs from "highlight.js";
 import "highlight.js/styles/github.css";
+import "github-markdown-css/github-markdown.css";
 import { parse } from "../../parser/index.js";
 import type {
 	BlockContent,
@@ -198,7 +199,7 @@ function escapeAttr(str: string): string {
 export class Viewer {
 	private container: HTMLElement;
 	private plugins: ParserPlugin[];
-	private urlFilter?: (url: string) => boolean;
+	private urlFilter: ((url: string) => boolean) | undefined;
 
 	constructor(
 		container: HTMLElement,

@@ -14,6 +14,9 @@ export default defineConfig({
 		},
 		rollupOptions: {
 			external: ["react", "react-dom", "react/jsx-runtime"],
+			output: {
+				assetFileNames: "style.css",
+			},
 		},
 		cssCodeSplit: false, // CSS를 하나의 style.css로
 	},

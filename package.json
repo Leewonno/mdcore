@@ -1,6 +1,6 @@
 {
 	"name": "@dldnjssh123/mdcore",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"main": "./dist/index.js",
 	"files": [
 		"dist"
@@ -23,6 +23,7 @@
 		}
 	},
 	"scripts": {
+		"dev": "vite",
 		"build": "vite build",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
@@ -49,6 +50,7 @@
 	"type": "module",
 	"dependencies": {
 		"dompurify": "^3.3.2",
+		"github-markdown-css": "^5.9.0",
 		"highlight.js": "^11.11.1"
 	}
 }
