@@ -9,6 +9,7 @@
     "sourceMap": false
   },
   "include": [
+    "src/globals.d.ts",
     "src/editor/core/index.ts",
     "src/editor/react/index.ts"
   ]
