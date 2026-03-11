@@ -30,13 +30,14 @@ function App() {
 				height={500}
 				placeholder="마크다운을 입력하세요..."
 			/>
-			<details style={{ marginTop: 16 }}>
-				<summary style={{ cursor: "pointer", color: "#888" }}>현재 값 보기</summary>
-				<pre style={{ background: "#f4f4f4", padding: 12, marginTop: 8 }}>{value}</pre>
-			</details>
 		</div>
 	);
 }
 
 const root = document.getElementById("root");
-if (root) createRoot(root).render(<StrictMode><App /></StrictMode>);
+if (root)
+	createRoot(root).render(
+		<StrictMode>
+			<App />
+		</StrictMode>,
+	);

@@ -2,6 +2,7 @@ import { registerShortcuts } from "./shortcuts.js";
 import { createToolbar } from "./Toolbar.js";
 import type { MarkdownEditorOptions } from "./types.js";
 import { Viewer } from "./Viewer.js";
+import "./styles/editor.css";
 
 function debounce<T extends unknown[]>(
 	fn: (...args: T) => void,
