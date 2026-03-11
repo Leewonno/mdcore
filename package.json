@@ -20,6 +20,11 @@
 			"default": "./dist/style.css"
 		}
 	},
+	"typesVersions": {
+		"*": {
+			"react": ["./dist/react.d.ts"]
+		}
+	},
 	"peerDependencies": {
 		"react": ">=18.0.0",
 		"react-dom": ">=18.0.0"
