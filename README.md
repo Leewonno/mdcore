@@ -2,18 +2,6 @@
 
 프레임워크 독립적인 마크다운 에디터 라이브러리입니다. Vanilla JS 코어 위에 React 어댑터를 제공합니다.
 
-## 특징
-
-- **분할 뷰** — 편집창과 미리보기가 나란히 표시되며 스크롤 동기화
-- **툴바** — H1~H3, 굵게, 기울임, 코드, 링크, 이미지, 목록, 인용구, 구분선
-- **키보드 단축키** — 자주 쓰는 포맷 단축키 기본 제공
-- **이미지 모달** — URL 입력 및 파일 업로드(선택) 지원
-- **문법 강조** — highlight.js 기반 코드 블록 하이라이팅
-- **XSS 방어** — DOMPurify로 렌더링 결과 자동 정제
-- **URL 필터** — `javascript:`, `data:`, `vbscript:` 기본 차단 + 커스텀 필터 지원
-- **플러그인** — 파서 플러그인으로 커스텀 블록/인라인 문법 확장 가능
-- **Tailwind 불필요** — 자체 CSS 제공, Tailwind 설치 없이 사용 가능
-
 ## 설치
 
 ```bash
@@ -94,6 +82,8 @@ function App() {
         className="my-editor"
       />
 
+      {/* uploadImage, onSave 는 필수 아님 */}
+
       {/* 읽기 전용 */}
       <MarkdownViewer content={value} />
     </>
@@ -150,7 +140,3 @@ const calloutPlugin: ParserPlugin = {
   },
 };
 ```
-
-## 라이선스
-
-MIT
