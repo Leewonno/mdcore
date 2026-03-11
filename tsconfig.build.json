@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist",
+    "declaration": true,
+    "declarationMap": false,
+    "emitDeclarationOnly": true,
+    "sourceMap": false
+  },
+  "include": [
+    "src/editor/core/index.ts",
+    "src/editor/react/index.ts"
+  ]
+}
