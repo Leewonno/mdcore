@@ -8,11 +8,11 @@
 	],
 	"exports": {
 		".": {
-			"types": "./dist/editor/core/index.d.ts",
+			"types": "./dist/index.d.ts",
 			"default": "./dist/index.js"
 		},
 		"./react": {
-			"types": "./dist/editor/react/index.d.ts",
+			"types": "./dist/react.d.ts",
 			"default": "./dist/react.js"
 		},
 		"./style": {
@@ -34,7 +34,7 @@
 	},
 	"scripts": {
 		"dev": "vite",
-		"build": "vite build && tsc -p tsconfig.build.json",
+		"build": "vite build && tsc -p tsconfig.build.json && rollup -c rollup.dts.config.js",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"keywords": [
@@ -54,6 +54,8 @@
 		"@vitejs/plugin-react": "^5.1.4",
 		"react": "^19.2.4",
 		"react-dom": "^19.2.4",
+		"rollup": "^4.59.0",
+		"rollup-plugin-dts": "^6.3.0",
 		"typescript": "^5.9.3",
 		"vite": "^7.3.1",
 		"vite-plugin-dts": "^4.5.4"
