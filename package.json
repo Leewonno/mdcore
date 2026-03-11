@@ -1,6 +1,6 @@
 {
 	"name": "@dldnjssh123/mdcore",
-	"version": "1.0.12",
+	"version": "1.0.13",
 	"main": "./dist/index.js",
 	"files": [
 		"dist",
@@ -22,7 +22,9 @@
 	},
 	"typesVersions": {
 		"*": {
-			"react": ["./dist/react.d.ts"]
+			"react": [
+				"./dist/react.d.ts"
+			]
 		}
 	},
 	"peerDependencies": {
